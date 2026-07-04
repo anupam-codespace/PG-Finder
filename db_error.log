@@ -1,0 +1,1404 @@
+[2026-07-04T05:30:27.339Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:30:27.345Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:30:27.349Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:30:27.352Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:30:27.354Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:30:27.377Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:30:27.380Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:30:27.399Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:30:27.400Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:30:56.831Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:30:56.835Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:30:56.837Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:30:56.841Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:30:56.850Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:30:56.853Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:30:56.855Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:30:56.857Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:30:56.860Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:55:25.992Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:55:25.993Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:55:25.997Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:55:25.999Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:55:26.000Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:55:26.000Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:55:26.001Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:55:26.002Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T05:55:26.012Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T06:00:34.003Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T06:00:34.006Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T06:00:34.008Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T06:00:34.011Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T06:00:34.012Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T06:00:34.013Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T06:00:34.016Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T06:00:34.020Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------
+[2026-07-04T06:00:34.026Z] REGISTER_TRANSACTION ERROR:
+DATABASE_URL in process.env: postgresql://globiz_user:globiz_secure_2024@localhost:5432/globiz_patholab?schema=public
+Message: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+Stack: PrismaClientKnownRequestError: 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the fields: (`email`)
+    at Un.handleRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:7447)
+    at Un.handleAndLogRequestError (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6771)
+    at Un.request (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:121:6478)
+    at async l (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:9644)
+    at async eval (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:130:30)
+    at async Proxy._transactionWithCallback (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/@prisma/client/runtime/library.js:130:8005)
+    at async POST (webpack-internal:///(rsc)/./app/api/auth/register/route.ts:129:28)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:55038
+    at async ek.execute (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:45808)
+    at async ek.handle (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:56292)
+    at async doRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/anupamsaha/Desktop/Globiz Patholab/node_modules/next/dist/server/lib/start-server.js:141:13)
+Stringified: {"name":"PrismaClientKnownRequestError","code":"P2002","clientVersion":"6.4.1","meta":{"modelName":"User","target":["email"]}}
+-------------------------------------------

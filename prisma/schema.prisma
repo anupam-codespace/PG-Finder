@@ -1,0 +1,58 @@
+// prisma/schema.prisma
+// Production-optimized schema for Globiz Patholab
+// Run: npx prisma migrate dev --name add_audit_fields
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String            @id @default(uuid())
+  email        String            @unique
+  passwordHash String
+  isVerified   Boolean           @default(false)
+  deviceType   DeviceType        @default(WEB)
+  loginCount   Int               @default(0)
+  lastLoginAt  DateTime?
+  createdAt    DateTime          @default(now())
+  updatedAt    DateTime          @updatedAt
+  otps         OtpVerification[]
+
+  // Composite index: partial filtered queries on unverified accounts
+  @@index([email, isVerified])
+  @@index([createdAt])
+  @@map("users")
+}
+
+model OtpVerification {
+  id        String     @id @default(uuid())
+  userId    String
+  otpCode   String
+  expiresAt DateTime
+  purpose   OtpPurpose
+  used      Boolean    @default(false)
+  createdAt DateTime   @default(now())
+  user      User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Compound index for the hot lookup path: WHERE userId=? AND otpCode=? AND purpose=? AND used=false AND expiresAt > now()
+  @@index([userId, purpose, used])
+  @@index([otpCode, purpose, used])
+  // Partial-scan index for expiry sweeps
+  @@index([expiresAt])
+  @@map("otp_verifications")
+}
+
+enum OtpPurpose {
+  LOGIN
+  REGISTER
+}
+
+enum DeviceType {
+  WEB
+  NATIVE_APP
+}
