@@ -7,8 +7,9 @@ export default function SplashScreen({ onDone }: { onDone: () => void }) {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    // Check if running on a native mobile platform (Capacitor)
-    const checkNative = typeof window !== 'undefined' && !!(window as any).Capacitor?.isNativePlatform();
+    const hasClass = typeof document !== 'undefined' && document.documentElement.classList.contains('is-native');
+    const isCapacitor = typeof window !== 'undefined' && !!(window as any).Capacitor?.isNativePlatform();
+    const checkNative = hasClass || isCapacitor;
     setIsNative(checkNative);
 
     if (!checkNative) {
@@ -17,9 +18,9 @@ export default function SplashScreen({ onDone }: { onDone: () => void }) {
       return;
     }
 
-    // Keep splash screen visible for 15 seconds on native apps
-    const tFade = setTimeout(() => setVisible(false), 15000);
-    const tDone = setTimeout(() => onDone(), 15400);
+    // Keep splash screen visible for 8 seconds on native apps
+    const tFade = setTimeout(() => setVisible(false), 8000);
+    const tDone = setTimeout(() => onDone(), 8400);
 
     return () => {
       clearTimeout(tFade);
@@ -34,11 +35,11 @@ export default function SplashScreen({ onDone }: { onDone: () => void }) {
 
   return (
     <div
+      className="splash-container"
       style={{
         position: 'fixed',
         top: 0, left: 0, right: 0, bottom: 0,
         zIndex: 99999,
-        display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
@@ -48,11 +49,16 @@ export default function SplashScreen({ onDone }: { onDone: () => void }) {
         transition: 'opacity 0.4s ease',
         overflow: 'hidden',
         WebkitFontSmoothing: 'antialiased',
-        // Hide on web instantly even before JS hydration if possible (safeguard)
-        display: typeof window !== 'undefined' && !(window as any).Capacitor?.isNativePlatform() ? 'none' : 'flex',
       }}
     >
       <style>{`
+        .splash-container {
+          display: none !important;
+        }
+        html.is-native .splash-container {
+          display: flex !important;
+        }
+
         @keyframes sp_fadeIn {
           0%   { opacity: 0; transform: translateY(12px); }
           100% { opacity: 1; transform: translateY(0); }

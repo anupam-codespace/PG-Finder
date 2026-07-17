@@ -33,6 +33,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var isNative = !!(
+                  (window.Capacitor && window.Capacitor.isNativePlatform) ||
+                  window.location.protocol === 'capacitor:' ||
+                  window.location.protocol === 'file:' ||
+                  (window.location.hostname === 'localhost' && !window.location.port) ||
+                  navigator.userAgent.indexOf('Capacitor') > -1
+                );
+                if (isNative) {
+                  document.documentElement.classList.add('is-native');
+                }
+              })();
+            `,
+          }}
+        />
+      </head>
       <body className="min-h-screen font-sans antialiased" style={{ background: '#f1f3ff', overscrollBehavior: 'none' }}>
         {children}
       </body>
