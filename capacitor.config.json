@@ -3,7 +3,7 @@
   "appName": "Globiz Patholab",
   "webDir": "out",
   "server": {
-    "androidScheme": "https",
+    "url": "http://10.0.2.2:3005",
     "cleartext": true
   },
   "android": {
@@ -11,11 +11,9 @@
   },
   "plugins": {
     "SplashScreen": {
-      "launchShowDuration": 2000,
+      "launchShowDuration": 0,
       "launchAutoHide": true,
-      "backgroundColor": "#2d14c9",
-      "androidSplashResourceName": "splash",
-      "androidScaleType": "CENTER_CROP",
+      "backgroundColor": "#100784",
       "showSpinner": false,
       "splashFullScreen": true,
       "splashImmersive": true
