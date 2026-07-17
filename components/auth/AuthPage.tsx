@@ -4,10 +4,12 @@ import React, { useState, useCallback, useEffect, useRef } from 'react';
 import LoginCard from './LoginCard';
 import RegisterCard from './RegisterCard';
 import OtpVerificationCard from './OtpVerificationCard';
+import ForgotPasswordCard from './ForgotPasswordCard';
+import ResetPasswordCard from './ResetPasswordCard';
 import Dashboard from '../dashboard/Dashboard';
 
-type View = 'login' | 'register' | 'otp';
-type OtpPurpose = 'LOGIN' | 'REGISTER';
+type View = 'login' | 'register' | 'otp' | 'forgot' | 'reset';
+type OtpPurpose = 'LOGIN' | 'REGISTER' | 'RESET_PASSWORD';
 
 interface OtpContext {
   userId: string;
@@ -67,12 +69,23 @@ const LEFT_CONTENT: Record<View, { tag: string; title: string; sub: string }> = 
     title: 'Secure your\naccount in seconds.',
     sub: 'We use email-based OTP verification to keep your diagnostic data safe and protected.',
   },
+  forgot: {
+    tag: 'Account Recovery',
+    title: 'Recover your\naccount password.',
+    sub: 'Enter your email address to receive an OTP code to reset your password.',
+  },
+  reset: {
+    tag: 'Reset Password',
+    title: 'Create a secure\nnew password.',
+    sub: 'Enter the verification code sent to your email and your new password.',
+  },
 };
 
 export default function AuthPage() {
   const [view, setView] = useState<View>('login');
   const [otpContext, setOtpContext] = useState<OtpContext | null>(null);
   const [authedUser, setAuthedUser] = useState<AuthUser | null>(null);
+  const [resetEmail, setResetEmail] = useState('');
 
   useEffect(() => {
     try {
@@ -122,10 +135,14 @@ export default function AuthPage() {
   // ── Mobile: gradient-top + white-card-bottom header titles ──
   const mobileTitle =
     view === 'login' ? 'Sign In' :
-    view === 'register' ? 'Sign Up' : 'Verify Email';
+    view === 'register' ? 'Sign Up' :
+    view === 'forgot' ? 'Forgot Password' :
+    view === 'reset' ? 'New Password' : 'Verify Email';
   const mobileSub =
     view === 'login' ? 'Welcome back! Please sign in.' :
     view === 'register' ? 'Create your account to get started.' :
+    view === 'forgot' ? 'Enter your email to get a reset code.' :
+    view === 'reset' ? 'Verify code and set your new password.' :
     'Check your inbox for the code.';
 
   return (
@@ -614,17 +631,21 @@ export default function AuthPage() {
               {/* Desktop heading */}
               <div style={{ marginBottom: 28 }} className="desktop-heading">
                 <p className="form-sub" style={{ marginBottom: 4, fontSize: '0.8rem', fontWeight: 700, color: '#6366f1', letterSpacing: '0.04em', textTransform: 'uppercase' }}>
-                  {view === 'login' ? 'Sign In' : view === 'register' ? 'Create Account' : 'Verify Email'}
+                  {view === 'login' ? 'Sign In' : view === 'register' ? 'Create Account' : view === 'forgot' ? 'Forgot Password' : view === 'reset' ? 'Reset Password' : 'Verify Email'}
                 </p>
                 <h2 className="form-title">
                   {view === 'login' ? 'Get Started Now' :
                    view === 'register' ? 'Create Your Account' :
+                   view === 'forgot' ? 'Reset Password' :
+                   view === 'reset' ? 'Set New Password' :
                    'Enter Your Code'}
                 </h2>
-                {(view === 'login' || view === 'register') && (
+                {(view === 'login' || view === 'register' || view === 'forgot' || view === 'reset') && (
                   <p className="form-sub">
                     {view === 'login' ? 'Please sign in to your account to continue.' :
-                     'Fill in your details to create a new account.'}
+                     view === 'register' ? 'Fill in your details to create a new account.' :
+                     view === 'forgot' ? 'Provide your email address to get a verification code.' :
+                     'Verify code and set your new password.'}
                   </p>
                 )}
               </div>
@@ -635,6 +656,7 @@ export default function AuthPage() {
                   onOtpRequired={(uid, em) => { setOtpContext({ userId: uid, email: em, purpose: 'LOGIN' }); setView('otp'); }}
                   onLoginSuccess={handleVerified}
                   onSwitchToRegister={() => setView('register')}
+                  onForgotPassword={() => setView('forgot')}
                 />
               </ViewTransition>
 
@@ -643,6 +665,23 @@ export default function AuthPage() {
                   onOtpRequired={(uid, em) => { setOtpContext({ userId: uid, email: em, purpose: 'REGISTER' }); setView('otp'); }}
                   onSwitchToLogin={() => setView('login')}
                 />
+              </ViewTransition>
+
+              <ViewTransition id="forgot" activeId={view}>
+                <ForgotPasswordCard
+                  onOtpSent={(em) => { setResetEmail(em); setView('reset'); }}
+                  onBackToLogin={() => setView('login')}
+                />
+              </ViewTransition>
+
+              <ViewTransition id="reset" activeId={view}>
+                {resetEmail && (
+                  <ResetPasswordCard
+                    email={resetEmail}
+                    onResetSuccess={() => { setResetEmail(''); setView('login'); }}
+                    onCancel={() => { setResetEmail(''); setView('login'); }}
+                  />
+                )}
               </ViewTransition>
 
               <ViewTransition id="otp" activeId={view}>

@@ -9,9 +9,10 @@ interface LoginCardProps {
   onOtpRequired: (userId: string, email: string) => void;
   onLoginSuccess: (token: string, user: any) => void;
   onSwitchToRegister: () => void;
+  onForgotPassword: () => void;
 }
 
-export default function LoginCard({ onOtpRequired, onLoginSuccess, onSwitchToRegister }: LoginCardProps) {
+export default function LoginCard({ onOtpRequired, onLoginSuccess, onSwitchToRegister, onForgotPassword }: LoginCardProps) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPw, setShowPw] = useState(false);
@@ -89,6 +90,9 @@ export default function LoginCard({ onOtpRequired, onLoginSuccess, onSwitchToReg
       <div className="w-input-group">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <label htmlFor="login-password" className="w-label">Password</label>
+          <button type="button" onClick={onForgotPassword} disabled={loading} className="w-link" style={{ fontSize: '0.8rem' }}>
+            Forgot password?
+          </button>
         </div>
         <div style={{ position: 'relative' }}>
           <input

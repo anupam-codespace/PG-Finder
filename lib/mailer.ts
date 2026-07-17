@@ -16,16 +16,20 @@ const transporter = nodemailer.createTransport({
 export async function sendOtpEmail(
   to: string,
   otpCode: string,
-  purpose: 'LOGIN' | 'REGISTER'
+  purpose: 'LOGIN' | 'REGISTER' | 'RESET_PASSWORD'
 ): Promise<void> {
   const subject =
     purpose === 'REGISTER'
       ? 'Verify your Globiz Patholab account'
+      : purpose === 'RESET_PASSWORD'
+      ? 'Reset your Globiz Patholab password'
       : 'Your Globiz Patholab login OTP';
 
   const actionText =
     purpose === 'REGISTER'
       ? 'complete your registration'
+      : purpose === 'RESET_PASSWORD'
+      ? 'reset your account password'
       : 'sign in to your account';
 
   // ── Always write OTP to local dev log file for easy local testing ───────

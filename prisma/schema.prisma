@@ -50,6 +50,7 @@ model OtpVerification {
 enum OtpPurpose {
   LOGIN
   REGISTER
+  RESET_PASSWORD
 }
 
 enum DeviceType {

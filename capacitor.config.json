@@ -3,7 +3,7 @@
   "appName": "Globiz Patholab",
   "webDir": "out",
   "server": {
-    "url": "http://10.0.2.2:3005",
+    "androidScheme": "https",
     "cleartext": true
   },
   "android": {

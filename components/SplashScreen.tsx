@@ -17,9 +17,9 @@ export default function SplashScreen({ onDone }: { onDone: () => void }) {
       return;
     }
 
-    // Keep splash screen visible for 7 seconds on native apps
-    const tFade = setTimeout(() => setVisible(false), 7000);
-    const tDone = setTimeout(() => onDone(), 7400);
+    // Keep splash screen visible for 15 seconds on native apps
+    const tFade = setTimeout(() => setVisible(false), 15000);
+    const tDone = setTimeout(() => onDone(), 15400);
 
     return () => {
       clearTimeout(tFade);
